@@ -505,7 +505,7 @@ class Language {
         final parser = seq([
           notLinkLabel,
           str("@"),
-          regexp(RegExp(r"[a-zA-Z0-9_-]+")),
+          regexp(RegExp(r"[a-zA-Z0-9_.-]+")),
           seq([
             str("@"),
             regexp(RegExp(r"[a-zA-Z0-9_.-]+")),
